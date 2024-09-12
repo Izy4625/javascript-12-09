@@ -8,14 +8,17 @@ function Mission1(arr){
   return evenNumbers
 }
 
- 
-function Mission2(text, element) {
+ const text = "hey hoer sdfkjh jhgf iuyt"
+function Mission2(text) {
     let arr = text.split(" ");
 return arr.reduce((ele, arrayEle) =>
-(arrayEle.length == element ? ele + 1 : ele), 0);
+(arrayEle.length == 4 ? ele + 1 : ele), 0);
 };
 
-console.log(Mission2(text, 4));
+function Mission3(twoDArr){
+    let arr = []
+    return arr.concat(...twoDArr);
+}
 
 function Mission5(arr1,arr2){
     const obj = {}
@@ -24,18 +27,12 @@ function Mission5(arr1,arr2){
     }
     return obj
 }
-function Mission6(n){
-    if(n<2){
-      return n
-    }else{
-      return Mission6(n-1) + Mission6(n-2);
-    }
-  } 
-  
+
  module.exports ={
     Mission1,
     Mission2,
+    Mission3,
     Mission5,
-    Mission6
+   
 
  }
